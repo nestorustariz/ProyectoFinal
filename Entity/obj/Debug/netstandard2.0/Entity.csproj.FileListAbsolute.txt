@@ -1,0 +1,9 @@
+c:\Users\LUISK\Documents\web\Proyecto\Entity\bin\Debug\netstandard2.0\Entity.deps.json
+c:\Users\LUISK\Documents\web\Proyecto\Entity\bin\Debug\netstandard2.0\Entity.dll
+c:\Users\LUISK\Documents\web\Proyecto\Entity\bin\Debug\netstandard2.0\Entity.pdb
+c:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.0\Entity.csprojAssemblyReference.cache
+c:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfoInputs.cache
+c:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.0\Entity.AssemblyInfo.cs
+c:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.0\Entity.csproj.CoreCompileInputs.cache
+c:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.0\Entity.dll
+c:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.0\Entity.pdb

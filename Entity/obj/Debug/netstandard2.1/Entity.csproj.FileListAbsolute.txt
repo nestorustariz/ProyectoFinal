@@ -1,0 +1,27 @@
+C:\Users\LUISK\Documents\web\Proyecto\Entity\bin\Debug\netstandard2.1\Entity.deps.json
+C:\Users\LUISK\Documents\web\Proyecto\Entity\bin\Debug\netstandard2.1\Entity.dll
+C:\Users\LUISK\Documents\web\Proyecto\Entity\bin\Debug\netstandard2.1\Entity.pdb
+C:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.csprojAssemblyReference.cache
+C:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfoInputs.cache
+C:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfo.cs
+C:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.dll
+C:\Users\LUISK\Documents\web\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.pdb
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Entity\bin\Debug\netstandard2.1\Entity.deps.json
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Entity\bin\Debug\netstandard2.1\Entity.dll
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Entity\bin\Debug\netstandard2.1\Entity.pdb
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.csprojAssemblyReference.cache
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfoInputs.cache
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfo.cs
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.dll
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.pdb
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Entity\bin\Debug\netstandard2.1\Entity.deps.json
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Entity\bin\Debug\netstandard2.1\Entity.dll
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Entity\bin\Debug\netstandard2.1\Entity.pdb
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.csprojAssemblyReference.cache
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.AssemblyInfo.cs
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.dll
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Entity\obj\Debug\netstandard2.1\Entity.pdb

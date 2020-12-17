@@ -1,0 +1,12 @@
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\bin\Release\netstandard2.1\Datos.deps.json
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\bin\Release\netstandard2.1\Datos.dll
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\bin\Release\netstandard2.1\Datos.pdb
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\bin\Release\netstandard2.1\Entity.dll
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\bin\Release\netstandard2.1\Entity.pdb
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Release\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Release\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Release\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Release\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Release\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Release\netstandard2.1\Datos.dll
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Release\netstandard2.1\Datos.pdb

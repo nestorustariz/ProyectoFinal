@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-4">
+        <div class="box-body">
+            <div class="input-group">
+                <input placeholder="Buscar..." name="filterCodigo" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box-body">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Seleccionar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let asignatura of asignaturas" (click)="seleccionar(asignatura)">
+                <td>{{asignatura.codAsignatura}}</td>
+                <td>{{asignatura.nombreAsignatura}}</td>
+                <td><a class="btn btn-primary btn-edit">Seleccionar</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

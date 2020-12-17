@@ -1,0 +1,65 @@
+<aside class="main-sidebar" >
+    <section class="sidebar">
+        <div class="user-panel">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="image">
+                        <img src="assets/dist/img/logoUPC.png">
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left info" style="position: initial;">
+                <p>{{ user != null ? user.nombre + ' ' + user.apellido : ''}}</p>
+                <a href="#"><i class="fa fa-circle text-success"></i>En Linea</a>
+            </div>
+        </div>
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">MENU</li>
+            <li class="treeview">
+                <a style="cursor: pointer;">
+                    <i class="fa fa-plus-square"></i>
+                    <span>Registrar</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a routerLink="/asignaturasAdd">Asignaturas</a></li>
+                    <li><a routerLink="/docentesAdd">Docentes</a></li>
+                    <li><a routerLink="/monitores">Monitores</a></li>
+                    <li><a routerLink="/usuarios">Usuarios</a></li>
+                </ul>
+            </li>
+            <li class="treeview" >
+                <a style="cursor: pointer;">
+                    <i class="fa fa-flask"></i>
+                    <span>Productos</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a routerLink="/productosAdd">Registrar</a></li>
+                    <li><a routerLink="/productosList">Consultar</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a routerLink="/solicitar"><i class="fa fa-book"></i><span>Solicitar</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a routerLink="/solicitudes"><i class="fa fa-indent"></i><span>Solicitudes</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a><i class="fa fa-list-alt"></i><span>Inventario</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="sidebar-menu" data-widget="tree" style="margin-top: 120px;">
+            <li class="treeview">
+                <a style="cursor: pointer;" (click)="logout()"><i class="fa fa-sign-out" ></i><span>Cerrar Sesion</span></a>
+            </li>
+        </ul>
+    </section>
+</aside>

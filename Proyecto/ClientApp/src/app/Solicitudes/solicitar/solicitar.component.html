@@ -1,0 +1,99 @@
+<section class="content">
+    <h2 style="text-align: center;">Solicitar</h2>
+    <form [formGroup]="registerForm" (submit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label>Asignatura</label>
+                        <select formControlName="codAsignatura" [ngClass]="{ 'is-invalid': submitted && control.codAsignatura.errors}" class="form-control">
+                            <option *ngFor="let asign of asignaturasC" [value]='asign.codAsignatura'>{{asign.nombreAsignatura}}</option>
+                        </select>
+                        <div *ngIf="submitted && control.codAsignatura.errors"  class="invalid-feedback">
+                            <div *ngIf="control.codAsignatura.errors.required">
+                              Campo obligatorio
+                            </div>
+                        </div>
+                    </div>                 
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Fecha Pedido</label>
+                                <input formControlName="fechaPedido" type="date" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.fechaPedido.errors}">
+                                <div *ngIf="submitted && control.fechaPedido.errors"  class="invalid-feedback">
+                                    <div *ngIf="control.fechaPedido.errors.required">
+                                      Campo obligatorio
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Fecha Entrega</label>
+                                <input formControlName="fechaEntrega" type="date" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.fechaEntrega.errors}">
+                                <div *ngIf="submitted && control.fechaEntrega.errors"  class="invalid-feedback">
+                                    <div *ngIf="control.fechaEntrega.errors.required">
+                                        Campo obligatorio
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label>Monitor</label>
+                        <input formControlName="identificacionM" placeholder="Identificacion monitor" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.identificacionM.errors}">
+                        <div *ngIf="submitted && control.identificacionM.errors"  class="invalid-feedback">
+                            <div *ngIf="control.identificacionM.errors.required">
+                                Campo obligatorio
+                            </div>
+                        </div>
+                    </div>                  
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Hora Entrega</label>
+                                <input  class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Horario Asignatura</label>
+                                <input  class="form-control">
+                            </div>
+                        </div>
+                    </div>                               
+                </div>
+            </div>         
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-6" #divProductos>
+                         
+            </div>
+            <div class="col-md-2" style="margin-top:32px">
+                <button class="btn btn-primary" type="button" (click)="dibujar()"><i class="fa fa-plus" ></i></button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row" style="margin-top: 50px;margin-left: -125px;">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button class="btn btn-primary form-control" type="submit">
+                        Registrar
+                    </button>
+                </div>
+                
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-danger form-control" type="reset" (click)="onReset();event.preventDefault()">Cancelar</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        {{instructions | json}}
+    </form>
+</section>

@@ -1,0 +1,107 @@
+<section class="content">
+    <h2 style="text-align: center;">Registro De Docentes</h2>
+    <form [formGroup]="registerForm" (submit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label>Identificacion:</label>
+                        <input formControlName="identificacion" placeholder="Identificacion" class="form-control" [ngClass]="{'is-invalid': submitted && control.identificacion.errors}" type="text">
+                        <div *ngIf="submitted && control.identificacion.errors" class="invalid-feedback">
+                            <div *ngIf="control.identificacion.errors.required">La identificacion es obligatoria</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Apellido:</label>
+                        <input formControlName="apellido" placeholder="Apellido(s)" class="form-control" [ngClass]="{'is-invalid': submitted && control.apellido.errors}"  type="text">
+                        <div *ngIf="submitted && control.apellido.errors" class="invalid-feedback">
+                            <div *ngIf="control.apellido.errors.required">Campo Obligatorio</div>
+                        </div>
+                    </div>
+                    <!--<div class="form-group">
+                        <label>Codigo Asignatura:</label>
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Seleccione un codigo de asignatura" formControlName="codAsignatura" [ngClass]="{'is-invalid': submitted && control.codAsignatura.errors}" >
+                            <button class="btn btn-primary" type="button" (click)="openModalAsignaturas()">Buscar</button>
+                            <div *ngIf="submitted && control.codAsignatura.errors" class="invalid-feedback">
+                                <div *ngIf="control.codAsignatura.errors.required">Se requiere un codigo de asignatura</div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input class="form-control" formControlName="nombre" placeholder="Nombre(s)" [ngClass]="{'is-invalid': submitted && control.nombre.errors}" >
+                        <div *ngIf="submitted && control.nombre.errors" class="invalid-feedback">
+                            <div *ngIf="control.nombre.errors.required">Se require un codigo de asignatura</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="programa">Programa:</label>
+                        <input formControlName="programa" class="form-control" placeholder="Programa" [ngClass]="{'is-invalid': submitted && control.programa.errors}">
+                        <div *ngIf="submitted && control.programa.errors" class="invalid-feedback">
+                            <div *ngIf="control.programa.errors.required">Se require un codigo de asignatura</div>
+                        </div>
+                    </div>
+                    <!--<div class="form-group">
+                        <label>Nombre Asignatura</label>
+                        <input readonly class="form-control" formControlName="nombreAsignatura">
+                    </div>-->
+                </div>
+            </div>
+            <div class="col-md-12"><br></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <button class="btn btn-primary form-control" type="submit">Registrar</button>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-danger form-control" type="reset" (click)="onReset()">Cancelar</button>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-12"><br></div>
+            <div class="col-md-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Docentes</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box-body">
+                                <div class="input-group">
+                                    <input placeholder="Buscar" class="form-control" [(ngModel)]="searchText" name="searchText" formControlName = "searchText">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr style="text-align:center">
+                                    <th>#</th>
+                                    <th>Identificacion</th>
+                                    <th>Nombre y Apellido</th>
+                                    <th>Programa</th>
+                                    <th>Editar</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="text-align:center" *ngFor="let docente of docentes|filtroDocente:searchText; index as i">
+                                    <td scope="row">{{i + 1}}</td>
+                                    <td>{{docente.identificacion}}</td>
+                                    <td>{{docente.nombre}} {{docente.apellido}}</td>
+                                    <td>{{docente.programa}}</td>
+                                    <td><a class="btn btn-primary btn-edit"><i class="fa fa-edit"></i></a></td>
+                                    <td><a class="btn btn-danger btn-remove"><i class="fa fa-minus-square"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

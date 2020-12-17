@@ -1,0 +1,83 @@
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <h6 style="text-align:left" style="color: white;">Categoria 1: A esta categoria pertenecen los insumos de las marcas ABC, GLASSCO, Nacional. </h6>
+            <h6 style="text-align:left "style="color: white;" >Categoria 2: A esta categoria pertenecen los insumos de las marcas SHARLAU-MERCK, PROTEX, COVER GLASS. </h6>  
+        </div>
+    </div>
+    <br>
+    <br>
+    <h2 style="text-align: center;">Registro De Productos</h2>
+    <form [formGroup]="registerForm" (submit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label>Codigo:</label>
+                        <input formControlName="codProducto" placeholder="Codigo producto" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.codProducto.errors}">
+                        <div *ngIf="submitted && control.codProducto.errors"  class="invalid-feedback">
+                            <div *ngIf="control.codProducto.errors.required">
+                              Se require un codigo de producto
+                            </div>
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Descripcion:</label>
+                        <input formControlName="descripcion" placeholder="Descripcion producto" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.descripcion.errors}">
+                        <div *ngIf="submitted && control.descripcion.errors"  class="invalid-feedback">
+                            <div *ngIf="control.descripcion.errors.required">
+                              Se require una descripcion
+                            </div>
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Marca:</label>
+                        <input formControlName="marca" placeholder="Marca producto" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.marca.errors}">
+                        <div *ngIf="submitted && control.marca.errors"  class="invalid-feedback">
+                            <div *ngIf="control.marca.errors.required">
+                              Se require una marca de producto
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box-body">                   
+                    <div class="form-group">
+                        <label>Cantidad:</label>
+                        <input formControlName="cantidad" type="number" placeholder="Cantidad a registrar" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.cantidad.errors}">
+                        <div *ngIf="submitted && control.cantidad.errors"  class="invalid-feedback">
+                            <div *ngIf="control.cantidad.errors.required">
+                              Se require una cantidad a registrar
+                            </div>
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Categoria</label>
+                        <select formControlName="categoria" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.categoria.errors}">
+                            <option value="">Seleccionar</option>
+                            <option value="Categoria1">Categoria1</option>
+                            <option value="Categoria2">Categoria2</option>
+                        </select>
+                        <div *ngIf="submitted && control.categoria.errors"  class="invalid-feedback">
+                            <div *ngIf="control.categoria.errors.required">
+                              Seleccione una opcion
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col-md-11"><br></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <button class="btn btn-primary form-control" type="submit">Registrar</button>
+                            </div>                        
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-danger form-control" type="reset" (click)="onReset()">Cancelar</button>                       
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,36 @@
+C:\Users\LUISK\Documents\web\Proyecto\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+C:\Users\LUISK\Documents\web\Proyecto\Datos\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\LUISK\Documents\web\Proyecto\Datos\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\LUISK\Documents\web\Proyecto\Datos\bin\Debug\netstandard2.1\Entity.dll
+C:\Users\LUISK\Documents\web\Proyecto\Datos\bin\Debug\netstandard2.1\Entity.pdb
+C:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.dll
+C:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.pdb
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\bin\Debug\netstandard2.1\Entity.dll
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\bin\Debug\netstandard2.1\Entity.pdb
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.dll
+C:\Users\nicoa\Downloads\Proyecto\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.pdb
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\bin\Debug\netstandard2.1\Entity.dll
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\bin\Debug\netstandard2.1\Entity.pdb
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.dll
+C:\Users\USUARIO\Downloads\Prueba SignalR\Proyecto\Datos\obj\Debug\netstandard2.1\Datos.pdb

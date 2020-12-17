@@ -1,0 +1,78 @@
+<div *ngIf="solicitud">
+    <section class="content">
+        <h2 style="text-align: center;">Solicitud</h2>
+        <form [formGroup]="registerForm" (submit)="onSubmit()">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Identificacion Docente</label>
+                            <input disabled formControlName="identificacionD" value="{{solicitud.identificacionD}}" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.identificacionD.errors}">
+                        </div>
+                        <div class="form-group">
+                            <label>Fecha pedido</label>
+                            <input disabled formControlName="fechaPedido"  value="{{solicitud.fechaPedido}}" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.fechaPedido.errors}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Docente</label>
+                            <input disabled formControlName="nombreD" value="{{solicitud.nombreD}}" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.nombreD.errors}">
+                        </div>
+                        <div class="form-group">
+                            <label>Fecha entrega</label>
+                            <input disabled formControlName="fechaEntrega" value="{{solicitud.fechaEntrega}}" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.fechaEntrega.errors}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Asignatura</label>
+                            <input disabled formControlName="nombreAsignatura" value="{{solicitud.nombreAsignatura}}" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.nombreAsignatura.errors}">
+                        </div>
+                        <div class="form-group">
+                            <label>Estado</label>
+                            <select formControlName="estado" [(ngModel)]="solicitud.estado" class="form-control" [ngClass]="{ 'is-invalid': submitted && control.estado.errors}">
+                                <option value="{{solicitud.estado}}">En Proceso</option>
+                                <option value="Aceptada">Aceptada</option>
+                                <option value="Rechazada">Rechazada</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box box-primary">
+                        <div class="box-header">
+                            <h2 class="box-title">Productos</h2>
+                        </div>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr style="text-align: center;">
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody id="res">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-body">
+                        <button class="btn btn-primary form-control" type="submit">Registrar</button>
+                    </div>                    
+                </div>
+                <div class="col-md-4">
+                    <div class="box-body">
+                        <button class="btn btn-danger form-control" type="reset" (click)="onReset()">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+

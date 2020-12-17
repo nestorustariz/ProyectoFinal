@@ -1,0 +1,10 @@
+.col-md-12{
+    border-top-left-radius:     1em 5em;
+    border-top-right-radius:    1em 5em;
+    border-bottom-right-radius: 1em 5em;
+    border-bottom-left-radius:  1em 5em;
+    background-color: #129ae9;
+    
+    font-style: italic;
+    
+}

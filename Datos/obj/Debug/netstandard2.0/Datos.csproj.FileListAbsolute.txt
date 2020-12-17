@@ -1,0 +1,12 @@
+c:\Users\LUISK\Documents\web\Proyecto\Datos\bin\Debug\netstandard2.0\Datos.deps.json
+c:\Users\LUISK\Documents\web\Proyecto\Datos\bin\Debug\netstandard2.0\Datos.dll
+c:\Users\LUISK\Documents\web\Proyecto\Datos\bin\Debug\netstandard2.0\Datos.pdb
+c:\Users\LUISK\Documents\web\Proyecto\Datos\bin\Debug\netstandard2.0\Entity.dll
+c:\Users\LUISK\Documents\web\Proyecto\Datos\bin\Debug\netstandard2.0\Entity.pdb
+c:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.0\Datos.csprojAssemblyReference.cache
+c:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfoInputs.cache
+c:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.0\Datos.AssemblyInfo.cs
+c:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.0\Datos.csproj.CoreCompileInputs.cache
+c:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.0\Datos.csproj.CopyComplete
+c:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.0\Datos.dll
+c:\Users\LUISK\Documents\web\Proyecto\Datos\obj\Debug\netstandard2.0\Datos.pdb

@@ -1,0 +1,149 @@
+<section class="content">
+    <h2 style="text-align: center;">Registro De Usuarios</h2>
+    <br>
+    <form [formGroup]="registerForm" (submit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Identificacion</label>
+                            <input placeholder="Identificacion usario" class="form-control" formControlName="identificacion" [ngClass]="{ 'is-invalid': submitted && control.identificacion.errors}" type="text">
+                            <div *ngIf="submitted && control.identificacion.errors"  class="invalid-feedback">
+                                <div *ngIf="control.identificacion.errors.required">
+                                  Campo obligatorio
+                                </div>
+                              </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Apellido(s)</label>
+                            <input placeholder="Apellido(s) usario" class="form-control" formControlName="apellido" [ngClass]="{ 'is-invalid': submitted && control.apellido.errors}" type="text">
+                            <div *ngIf="submitted && control.apellido.errors"  class="invalid-feedback">
+                                <div *ngIf="control.apellido.errors.required">
+                                  Campo obligatorio
+                                </div>
+                              </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Tipo usuario</label>
+                            <select class="form-control" formControlName="tipo" [ngClass]="{ 'is-invalid': submitted && control.tipo.errors}">
+                                <option value="admin">Administrador</option>
+                                <option value="docente">Docente</option>
+                                <option value="monitor">Monitor</option>
+                            </select>
+                            <div *ngIf="submitted && control.tipo.errors"  class="invalid-feedback">
+                                <div *ngIf="control.tipo.errors.required">
+                                  Campo obligatorio
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Nombre(s)</label>
+                            <input placeholder="nombre(s) usuario" class="form-control" formControlName="nombre" [ngClass]="{ 'is-invalid': submitted && control.nombre.errors}" type="text">
+                            <div *ngIf="submitted && control.nombre.errors"  class="invalid-feedback">
+                                <div *ngIf="control.nombre.errors.required">
+                                  Campo obligatorio
+                                </div>
+                              </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Correo</label>
+                            <input placeholder="Correo electronico" class="form-control" formControlName="correo" [ngClass]="{ 'is-invalid': submitted && control.correo.errors}" type="text">
+                            <div *ngIf="submitted && control.correo.errors"  class="invalid-feedback">
+                                <div *ngIf="control.correo.errors.required">
+                                  Campo obligatorio
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Usuario</label>
+                                    <input class="form-control" placeholder="Usuario" formControlName="userName" [ngClass]="{ 'is-invalid': submitted && control.userName.errors}" type="text">
+                                    <div *ngIf="submitted && control.userName.errors"  class="invalid-feedback">
+                                        <div *ngIf="control.userName.errors.required">
+                                          Campo obligatorio
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Contraseña</label>
+                                    <input class="form-control" placeholder="Contraseña" formControlName="password" [ngClass]="{ 'is-invalid': submitted && control.password.errors}" type="text">
+                                    <div *ngIf="submitted && control.password.errors"  class="invalid-feedback">
+                                        <div *ngIf="control.password.errors.required">
+                                          Campo obligatorio
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12"><br></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <button class="btn btn-primary form-control" type="submit">Registrar</button>
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-danger form-control" type="reset" (click)="onReset()">Cancelar</button>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-12"><br></div>
+            <div class="col-md-12">
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Usuarios</h3>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="box-body">
+                      <div class="input-group">
+                        <input placeholder="Buscar" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-body">
+                  <table id="tableAsignaturas" class="table table-bordered table-striped">
+                    <thead>
+                      <tr style="text-align:center">
+                        <th>#</th>
+                        <th>Identificacion</th>
+                        <th>Nombre y Apellido</th>
+                        <th>Correo</th>
+                        <th>Tipo</th>
+                        <th>Usuario</th>
+                        <th>Password</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="text-align:center" *ngFor="let usuario of usuarios; index as i">
+                        <td scope="row">{{i + 1}}</td>
+                        <td>{{usuario.identificacion}}</td>
+                        <td>{{usuario.nombre}} {{usuario.apellido}}</td>
+                        <td>{{usuario.correo}}</td>
+                        <td>{{usuario.tipo}}</td>
+                        <td>{{usuario.userName}}</td>
+                        <td>{{usuario.password}}</td>
+                        <td><a class="btn btn-primary btn-edit"><i class="fa fa-edit"></i></a></td>
+                        <td><a class="btn btn-danger btn-delete"><i class="fa fa-minus-square"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+        </div>
+    </form>
+</section>
